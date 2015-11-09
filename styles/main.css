@@ -1,0 +1,78 @@
+.nav a {
+  color: #5a5a5a;
+
+}
+
+.nav li {
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  display: inline;
+  text-transform: uppercase;
+}
+
+.jumbotron {
+  background-image:url('../images/temp-bg.jpeg');
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 0px;
+  margin-bottom: 2em;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:100px;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.section-title {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.me-nutshell{
+  width: 400px;
+  height:400px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid white;
+  border-radius: 200px;
+  -webkit-border-radius: 200px; 
+  margin-top: 0px;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.about-me {
+  border: 1px solid green;
+  margin-bottom: 2em;
+}
+
+.my-photo, .my-description {
+  border: 1px solid red;
+    vertical-align: middle;
+}
+
+.my-work {
+  height: 400px;
+  border: 1px solid blue;
+  margin-bottom: 2em;
+}
