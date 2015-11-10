@@ -48,6 +48,14 @@
   vertical-align: middle;
 }
 
+.dark-section {
+  background-color: #999;
+}
+
+.light-section {
+  background-color: #fff;
+}
+
 .me-nutshell{
   width: 400px;
   height:400px;
@@ -68,11 +76,15 @@
 
 .my-photo, .my-description {
   border: 1px solid red;
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .my-work {
   height: 400px;
   border: 1px solid blue;
   margin-bottom: 2em;
+}
+
+.location-details ul, .my-description ul {
+  list-style-type: none;
 }

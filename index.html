@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css">
 	<script type="text/javascript"src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="scripts/app.js"></script>
@@ -10,16 +12,17 @@
 	<title>Document</title>
 </head>
 <body>
+	<a id="about"></a> <!-- need to add header tag encapsulating top section -->
 	<div class="nav">
 		<div class="container">
 			<ul class="pull-left">
 				<li class="btn">scott hayward</li>
 			</ul>
 			<ul class="pull-right">
-				<li class="btn"><a href="">home</a></li>
-				<li class="btn"><a href="">about</a></li>
-				<li class="btn"><a href="">portfolio</a></li>
-				<li class="btn"><a href="">contact</a></li>
+				<li class="btn"><a href="#home">home</a></li>
+				<li class="btn"><a href="#profile">about</a></li>
+				<li class="btn"><a href="#portfolio">portfolio</a></li>
+				<li class="btn"><a href="#contact">contact</a></li>
 			</ul>
 		</div>
 	</div>
@@ -32,44 +35,67 @@
 		</div>
 	</div>
 	<section>
-		<div class="section-title">
-			<h1>About</h1>
-		</div>
-		<div class="about-me">
-			<div class="row row-centered">
-				<div class="col-sm-4 col-centered my-photo">
-					<img src="images/temp-portrait.jpg">
-				</div>
-				<div class="col-sm-5 col-centered my-description">
-					<p>
-						The first time I made a web page, it was using Windows '98 and text edit on a blistering fast Pentium II 350 (it was actually a really fast machine for its time).  
-					</p>
-					<p>
-						Since those glorious days, I've had many adventures taken a few detours: liberal arts grad school, several years of making public policy, parenthood, and pug ownership.  A few years older and wiser, I've found my way back to creating online with the same sense of excitement that I felt in my parents basement all those years ago.  
-					</p>
-					<p>
-						I tend strongly towards minimalist design.  This means that a lot of rooms in my house are white or grey, and that there are no visible cables in my workspace. I really appreciate negative space. Naturally, this ethos carries over to the things I create.  I put a lot of effort into ensuring that each and every element of a design is carefully considered and purposeful.  This is especially true when it comes to animation.
-					</p>
-					<p>
-						My creative toolbox presently includes: HTML, CSS, Bootstrap, javascript, and jQuery.
-					</p>
-
+		<a id="profile"></a>
+		<div class="light-section">
+			<div class="section-title">
+				<h1>About</h1>
+			</div>
+			<div class="about-me">
+				<div class="row row-centered">
+					<div class="col-sm-4 col-centered my-photo">
+						<img src="images/temp-portrait.jpg">
+					</div>
+					<div class="col-sm-5 col-centered my-description">
+					<ul>
+						<li>I'm a little* bit old fashioned.</li>
+						<li>I limit my time on social.</li>
+						<li>I started making web things in 1998.</li>
+						<li>I took a few detours along the way.</li>
+						<li>I'm older now.</li>
+						<li>And wiser.</li>
+						<li>I've found my way back to creating online.</li>
+						<li>It still makes me smile.</li>
+						<li>I tend strongly towards minimalist design.</li>
+						<li>There are lots of white walls in my house.</li>
+						<li>And a pug.</li>
+						<li>Negative space is good.</li>
+						<li>Excessive animation is not.</li>
+						<li>Every element of every design must be carefully considered and purposeful.</li>
+						<li>HTML, CSS, Bootstrap, javascript, and jQuery.</li>
+						<li>More to come.</li>
+						<li>For sure.</li>
+					</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section>
-		<div class="section-title">
-			<h1>Portfolio</h1>
-		</div>
-		<div class="my-work">
+		<a id="portfolio"></a>
+		<div class="dark-section">
+			<div class="section-title">
+				<h1>Portfolio</h1>
+			</div>
+			<div class="my-work">
+			</div>
 		</div>
 	</section>
 	<section>
+		<a id="contact"></a>
 		<div class="section-title">
 			<h1>Contact</h1>
 		</div>
-		<div class="my-work">
+			<div class="row row-centered">
+				<div class="col-sm-4 col-centered location-details">
+					<p>I'm based in Ottawa.  Your best bets for reaching me are e-mail and good ol' fashioned telephone.  I'm also open to random hi-fives on the street. Details are below.</p>
+					<ul>
+						<li><i class="fa fa-at fa-2x"></i> temp[AT]temp[DOT]com</li>
+						<li><i class="fa fa-mobile fa-3x"></i> 999.999.9999</li>
+					</ul>
+				</div>
+				<div class="col-sm-5 col-centered city-map">
+					<img src="images/temp-portrait.jpg">
+				</div>
 		</div>
 	</section>
 </body>
