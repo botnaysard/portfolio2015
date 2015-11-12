@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:700|Roboto:300,400|Bitter:700' rel='stylesheet' type='text/css'>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
 	<link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css">
 	<script type="text/javascript"src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -12,60 +13,43 @@
 	<title>Document</title>
 </head>
 <body>
-	<a id="about"></a> <!-- need to add header tag encapsulating top section -->
+	<a id="links"></a> <!-- need to add header tag encapsulating top section -->
 	<div class="nav">
-		<div class="container">
-			<ul class="pull-left">
-				<li class="btn">scott hayward</li>
-			</ul>
-			<ul class="pull-right">
-				<li class="btn"><a href="#home">home</a></li>
-				<li class="btn"><a href="#profile">about</a></li>
-				<li class="btn"><a href="#portfolio">portfolio</a></li>
-				<li class="btn"><a href="#contact">contact</a></li>
-			</ul>
-		</div>
+		<ul class="pull-right">
+			<li class="btn"><a href="#home">home</a></li>
+			<li class="btn"><a href="#about">about</a></li>
+			<li class="btn"><a href="#portfolio">portfolio</a></li>
+			<li class="btn"><a href="#contact">contact</a></li>
+		</ul>
+
 	</div>
 	<div class="jumbotron">
 		<div class="container">
 			<div class="me-nutshell">
-				<h2>hi, i'm scott.</h2>
-				<p>i make things for the web.</p>
+				<h2>Hi, I'm Scott.</h2>
+				<p>I make things for the web.</p>
 			</div>
 		</div>
 	</div>
 	<section>
-		<a id="profile"></a>
-		<div class="light-section">
+		<a id="about"></a>
+		<div class="about-me">
 			<div class="section-title">
-				<h1>About</h1>
+				<h1>about me</h1>
 			</div>
-			<div class="about-me">
 				<div class="row row-centered">
-					<div class="col-sm-4 col-centered my-photo">
-						<img src="images/temp-portrait.jpg">
-					</div>
-					<div class="col-sm-5 col-centered my-description">
-					<ul>
-						<li>I'm a little* bit old fashioned.</li>
-						<li>I limit my time on social.</li>
-						<li>I started making web things in 1998.</li>
-						<li>I took a few detours along the way.</li>
-						<li>I'm older now.</li>
-						<li>And wiser.</li>
-						<li>I've found my way back to creating online.</li>
-						<li>It still makes me smile.</li>
-						<li>I tend strongly towards minimalist design.</li>
-						<li>There are lots of white walls in my house.</li>
-						<li>And a pug.</li>
-						<li>Negative space is good.</li>
-						<li>Excessive animation is not.</li>
-						<li>Every element of every design must be carefully considered and purposeful.</li>
-						<li>HTML, CSS, Bootstrap, javascript, and jQuery.</li>
-						<li>More to come.</li>
-						<li>For sure.</li>
-					</ul>
-					</div>
+				<div class="col-sm-3 col-centered my-photo">
+					<img src="images/temp-portrait.jpg">
+				</div>
+				<div class="col-sm-5 col-centered my-description">
+					<p></p>
+						<p>I'm a little bit old fashioned.</p>
+						<p>I like to keep things simple.</p>
+						<p>I've tried to quit coffee.</p>
+						<p>I limit my time on social media.</p>
+						<p>I <i class="fa fa-heart"></i> minimalist design.</p>
+						<p>I have a Pug named Pluto.</p>
+					<p>I create custom content for the web using HTML, CSS, Bootstrap, JavaScript, and jQuery.</p>
 				</div>
 			</div>
 		</div>
@@ -85,18 +69,18 @@
 		<div class="section-title">
 			<h1>Contact</h1>
 		</div>
-			<div class="row row-centered">
-				<div class="col-sm-4 col-centered location-details">
-					<p>I'm based in Ottawa.  Your best bets for reaching me are e-mail and good ol' fashioned telephone.  I'm also open to random hi-fives on the street. Details are below.</p>
-					<ul>
-						<li><i class="fa fa-at fa-2x"></i> temp[AT]temp[DOT]com</li>
-						<li><i class="fa fa-mobile fa-3x"></i> 999.999.9999</li>
-					</ul>
+			<div class="row row-centered my-details">
+				<div class="col-sm-5 col-centered location-details">
+					<p>I call Ottawa, ON home.</p>  
+					<p>Your best bets for reaching me are e-mail and good ol' fashioned telephone.</p>
+					<p>I'm also open to random hi-fives on the street.</p>
+						<p><i class="fa fa-envelope"></i> temp<i class="fa fa-at"></i>temp.com</p>
+						<p><i class="fa fa-phone"></i> 999.999.9999</p>
 				</div>
-				<div class="col-sm-5 col-centered city-map">
-					<img src="images/temp-portrait.jpg">
+				<div class="col-sm-4 col-centered city-map">
+					<img src="images/map.png">
 				</div>
-		</div>
+			</div>
 	</section>
 </body>
 </html>
