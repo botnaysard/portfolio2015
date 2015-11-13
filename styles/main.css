@@ -142,7 +142,6 @@ ul.pull-left {
 }
 
 .my-work {
-  height: 400px;
   margin-bottom: 2em;
 }
 
@@ -154,4 +153,24 @@ ul.pull-left {
 
 .location-details ul, .my-description ul {
   list-style-type: none;
+}
+
+.portfolio-entry {
+  border: 1px solid white;
+  vertical-align: middle;
+}
+
+.portfolio-entry p {
+  color: #e6e6e6;
+  font-size: 2em;
+}
+
+.portfolio-image {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-title {
+  color: #fff;
 }
