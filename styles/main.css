@@ -165,6 +165,19 @@ ul.pull-left {
   list-style-type: none;
 }
 
+.location-details a {
+  text-decoration: none;
+  color: #222;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav a:hover, .location-details a:hover {
+  color: #308E83;
+}
+
 .portfolio-box{
   margin-top: 6em;
   padding: 0px;
@@ -176,7 +189,7 @@ ul.pull-left {
 }
 
 .portfolio-intro {
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 300;
   color: #fff;
   text-align: center;
@@ -194,5 +207,9 @@ ul.pull-left {
 .contact-info {
   margin-top: 3em;
   margin-bottom: 7em;
+}
+
+.fa-paper-plane {
+  margin-top: 1.5em;
 }
 
