@@ -165,32 +165,50 @@ ul.pull-left {
   list-style-type: none;
 }
 
-.portfolio-box {
+.portfolio-box, .portfolio-box{
   margin-top: 6em;
   padding: 0px;
   text-align: center;
 }
 
-.portfolio-box img{
-  border-radius: 75px;
+.portfolio-box img {
+  border-radius: 2px;
 }
 
 .portfolio-description {
-  padding: 5px;
   color: white;
   vertical-align: middle;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #fff;
+  list-style-type: none;
+  margin-left: -115px;
+  margin-top: -10px
+  height: 257px;
 }
 
-.description-right {
-  border-top: 1px solid white;
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
+.portfolio-description ul {
+  list-style-type: none;
+  padding-left: 0px;
+  text-align: center;
+  vertical-align: middle;
+  float: middle;
+  height: 257px;
+  background-color: #000;
+  opacity: 0.5
 }
 
-.description-left {
-  border-top: 1px solid white;
-  border-left: 1px solid white;
-  border-bottom: 1px solid white;
+.portfolio-description li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.portfolio-intro {
+  font-size: 2em;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 #first-box {
@@ -200,3 +218,4 @@ ul.pull-left {
 .fa-heart {
   color: red;
 }
+
