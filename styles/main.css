@@ -9,13 +9,22 @@ body{
 }
 
 
-.nav{
-  margin-top: 0.75em;
+.nav {
   background-color: #fff;
+  width: 100%;
+  vertical-align: middle;
+  z-index: 100;
+  position: fixed;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .nav a {
   color: #5a5a5a;
+  text-decoration: none;
+}
+
+.nav ul {
+  margin: 0.2em;
 }
 
 .nav li {
@@ -170,10 +179,6 @@ ul.pull-left {
   color: #222;
 }
 
-.nav a {
-  text-decoration: none;
-}
-
 .nav a:hover, .location-details a:hover {
   color: #308E83;
 }
@@ -213,3 +218,6 @@ ul.pull-left {
   margin-top: 1.5em;
 }
 
+.hidden {
+  opacity: 0;
+}

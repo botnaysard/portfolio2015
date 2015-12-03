@@ -7,9 +7,9 @@ $(document).ready(function(){
 
 	$(window).scroll(function(delay, opacity) {
 	    tiles.each(function(i) {
-	        elementBottom = $(this).offset().top + 300;
-	        windowBottom = $(window).scrollTop() + $(window).height() + 200;
-	        if (elementBottom < windowBottom) $(this).fadeTo(700, 1);
+	        elementBottom = $(this).offset().top + $(this).height();
+	        windowBottom = $(window).scrollTop() + $(window).height() + 300;
+	        if (elementBottom < windowBottom) $(this).fadeTo(500, 1);
 	    });
 	});
 
@@ -21,7 +21,23 @@ $(document).ready(function(){
 	    return false;
 	});
 
+	// animate menu on scroll
 
-
+	var windowPosition = $(window);
+	var currentPosition = windowPosition.scrollTop();
+	var goingUp = false;
+	var scrollPosition;
+	windowPosition.scroll(function () {
+	    scrollPosition = windowPosition.scrollTop();
+	    if (scrollPosition > currentPosition && !goingUp) {
+	        $('.nav').stop().slideToggle();
+	        goingUp = !goingUp;
+	        console.log(goingUp);
+	    } else if(scrollPosition < currentPosition && goingUp) {
+	        $('.nav').stop().slideToggle();
+	        goingUp = !goingUp;
+	    }
+	    currentPosition = scrollPosition;
+	});
 
 });
