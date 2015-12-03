@@ -7,9 +7,9 @@ $(document).ready(function(){
 
 	$(window).scroll(function(delay, opacity) {
 	    tiles.each(function(i) {
-	        elementBottom = $(this).offset().top + $(this).height();
+	        elementBottom = $(this).offset().top + 300;
 	        windowBottom = $(window).scrollTop() + $(window).height() + 300;
-	        if (elementBottom < windowBottom) $(this).fadeTo(500, 1);
+	        if (elementBottom < windowBottom) $(this).fadeTo(700, 1);
 	    });
 	});
 
