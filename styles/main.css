@@ -38,7 +38,7 @@ body{
 
 .jumbotron {
   background-image:url('../images/temp-bg.jpeg');
-  height: 1080px;
+  height: 800px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -216,8 +216,4 @@ ul.pull-left {
 
 .fa-paper-plane {
   margin-top: 1.5em;
-}
-
-.hidden {
-  opacity: 0;
 }

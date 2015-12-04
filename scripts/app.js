@@ -3,11 +3,11 @@ $(document).ready(function(){
 	// fade in each section on scroll
 
 
-	tiles = $('section').fadeTo(0, 0);
+	tiles = $('.faded').fadeTo(0, 0);
 
 	$(window).scroll(function(delay, opacity) {
 	    tiles.each(function(i) {
-	        elementBottom = $(this).offset().top + 300;
+	        elementBottom = $(this).offset().top + 400;
 	        windowBottom = $(window).scrollTop() + $(window).height() + 300;
 	        if (elementBottom < windowBottom) $(this).fadeTo(700, 1);
 	    });
