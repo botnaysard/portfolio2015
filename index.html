@@ -14,7 +14,7 @@
 </head>
 <body>
 	<a id="links"></a> <!-- need to add header tag encapsulating top section -->
-	<div class="nav">
+	<div class="nav on-page-load">
 		<ul class="pull-right">
 			<li class="btn"><a href="#home">home</a></li>
 			<li class="btn"><a href="#about">about</a></li>
@@ -22,7 +22,7 @@
 			<li class="btn"><a href="#contact">contact</a></li>
 		</ul>
 	</div>
-	<div class="jumbotron">
+	<div class="jumbotron on-page-load">
 		<div class="container">
 			<div class="me-nutshell">
 				<h2>Hi, I'm Scott.</h2>
@@ -32,11 +32,11 @@
 	</div>
 	<section>
 		<a id="about"></a>
-		<div class="about-me">
+		<div class="about-me on-page-load">
 			<div class="section-title-black">
 				<h1>about me</h1>
 			</div>
-			<div class="row row-centered faded">
+			<div class="row row-centered">
 				<div class="col-sm-3 col-centered my-photo">
 					<img src="images/temp-portrait.jpg">
 				</div>
@@ -60,25 +60,30 @@
 				<h1>Portfolio</h1>
 			</div>
 			<div class="portfolio-intro">
-				<p>Here are a few of my recent projects.</p>
-				<p>To see the live site, just click on an image.</p>  
-				<p>To access the GitHub repo, see the contact section.</p>
+				<p>Here are some of my recent projects.</p>
+				<p>To see the live sites, just click on an image.</p>  
 			</div>
 			<div class="my-work">
 				<div class="row row-centered">
-					<div class="col-sm-6 col-centered portfolio-box" id="first-box">
-						<a href="http://mrmooby.github.io/api-hack" title="Howfarfromh.me" target="_blank"><img class="wiggle" src="images/maps-api.png"></a>
-					</div>	
+					<a href="http://mrmooby.github.io/api-hack" title="Howfarfromh.me" target="_blank">
+						<div class="col-sm-6 col-centered portfolio-box" id="first-box">
+							<img src="images/maps-api.png">
+						</div>
+					</a>
 				</div>
 				<div class="row row-centered">
-					<div class="col-sm-6 col-centered portfolio-box">
-						<a href="http://mrmooby.github.io/fewd-shopping-list" title="Shopping List" target="_blank"><img class="wiggle" src="images/shopping.png"></a>
-					</div>	
+					<a href="http://mrmooby.github.io/fewd-shopping-list" title="Shopping List" target="_blank">
+						<div class="col-sm-6 col-centered portfolio-box">
+							<img src="images/shopping.png">
+						</div>	
+					</a>
 				</div>
-					<div class="row row-centered">
-					<div class="col-sm-6 col-centered portfolio-box">
-						<a href="http://mrmooby.github.io/fewd-quiz" title="Anatomy Quiz" target="_blank"><img class="wiggle" src="images/quiz.png"></a>
-					</div>
+				<div class="row row-centered">
+					<a href="http://mrmooby.github.io/fewd-quiz" title="Anatomy Quiz" target="_blank">
+						<div class="col-sm-6 col-centered portfolio-box">
+							<img src="images/quiz.png">
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>

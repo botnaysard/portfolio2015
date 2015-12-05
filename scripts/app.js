@@ -1,7 +1,10 @@
 $(document).ready(function(){
-	
-	// fade in each section on scroll
 
+	// fade the first two sections of the page in on load
+	$('.on-page-load').css('display', 'none');
+	$('.on-page-load').fadeIn(750);
+
+	// fade in each remaining section on scroll
 
 	tiles = $('.faded').fadeTo(0, 0);
 

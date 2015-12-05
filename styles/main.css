@@ -183,14 +183,30 @@ ul.pull-left {
   color: #308E83;
 }
 
-.portfolio-box{
+.portfolio-box {
   margin-top: 6em;
   padding: 0px;
   text-align: center;
+  width: 600px;
+  height: 257px;
+  border-radius: 10px;
+}
+
+.portfolio-box:after {
+    content:'\A';
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(48,142,131,0.2);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.portfolio-box:hover:after {
+    opacity: 1;
 }
 
 .portfolio-box img {
-  border-radius: 34px 21px 34px 21px;
 }
 
 .portfolio-intro {
@@ -217,3 +233,5 @@ ul.pull-left {
 .fa-paper-plane {
   margin-top: 1.5em;
 }
+
+
