@@ -148,7 +148,7 @@ ul.pull-left {
 .my-description, .location-details{
   font-size: 1.8em;
   font-weight: 300;
-  margin-left: 1em;
+  margin-left: 1.5em;
 }
 
 .location-details, .city-map {
@@ -164,7 +164,7 @@ ul.pull-left {
   width: 364px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
 
 .city-map img {
@@ -244,13 +244,19 @@ ul.pull-left {
 
 /*** RESPONSIVE ELEMENTS FOR SMALL SCREENS ***/
 
-@media only screen 
-  and (max-device-width: 600px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) {
   
-.col-sm-12 {
-  text-align: center;
+  .col-sm-12 {
+    text-align: center;
+  }
+
 }
 
+@media only screen and (max-width: 991px) {
+  
+  .col-md-4, .col-md-5 {
+    text-align: center;
+  }
 
+}
 
