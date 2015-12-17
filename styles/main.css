@@ -138,9 +138,17 @@ ul.pull-left {
   vertical-align: middle;
 }
 
+.my-photo {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+
 .my-description, .location-details{
   font-size: 1.8em;
   font-weight: 300;
+  margin-left: 1em;
 }
 
 .location-details, .city-map {
@@ -148,11 +156,15 @@ ul.pull-left {
 }
 
 .my-photo img{
-  /*
-  float: right;
-  */
   border-radius: 200px;
   -webkit-border-radius: 200px; 
+}
+
+.city-map {
+  width: 364px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
 }
 
 .city-map img {
@@ -189,7 +201,6 @@ ul.pull-left {
   text-align: center;
   width: 600px;
   height: 257px;
-  border-radius: 10px;
 }
 
 .portfolio-box:after {
@@ -206,9 +217,6 @@ ul.pull-left {
     opacity: 1;
 }
 
-.portfolio-box img {
-}
-
 .portfolio-intro {
   font-size: 1.8em;
   font-weight: 300;
@@ -218,7 +226,7 @@ ul.pull-left {
 }
 
 #first-box {
-  margin-top: 1.5em;
+  margin-top: 1.5em
 }
 
 .fa-heart {
@@ -233,5 +241,16 @@ ul.pull-left {
 .fa-paper-plane {
   margin-top: 1.5em;
 }
+
+/*** RESPONSIVE ELEMENTS FOR SMALL SCREENS ***/
+
+@media only screen 
+  and (max-device-width: 600px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  
+.col-sm-12 {
+  text-align: center;
+}
+
 
 
