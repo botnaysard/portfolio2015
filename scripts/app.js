@@ -56,11 +56,11 @@ $(document).ready(function(){
 		windowPosition.scroll(function () {
 		    scrollPosition = windowPosition.scrollTop();
 		    if (scrollPosition > currentPosition && !goingUp) {
-		        $('.nav').stop().slideToggle();
+		        $('.navbar').stop().fadeToggle();
 		        goingUp = !goingUp;
 		        console.log(goingUp);
 		    } else if(scrollPosition < currentPosition && goingUp) {
-		        $('.nav').stop().slideToggle();
+		        $('.navbar').stop().fadeToggle();
 		        goingUp = !goingUp;
 		    }
 		    currentPosition = scrollPosition;
