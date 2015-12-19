@@ -1,5 +1,10 @@
 $(document).ready(function(){
+	
+	// adjust rendering for devices
+	var viewPortScale = 1 / window.devicePixelRatio;
+	$('#viewport').attr('content', 'user-scalable=no, initial-scale='+viewPortScale+', width=device-width');
 
+	// determine if content is being viewed on a mobile device
 	var isMobile = {
 	    Android: function() {
 	        return navigator.userAgent.match(/Android/i);
@@ -21,7 +26,8 @@ $(document).ready(function(){
 	    }
 	};
 
-    if(!isMobile.any()) {
+	//if the device is NOT mobile, allow animations
+    if(!isMobile.any()) { 
 
 		// fade the first two sections of the page in on load
 		$('.on-page-load').css('display', 'none');
@@ -66,5 +72,4 @@ $(document).ready(function(){
 		    currentPosition = scrollPosition;
 		});
 	}
-
 });
