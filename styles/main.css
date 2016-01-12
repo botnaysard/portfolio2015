@@ -247,7 +247,7 @@ html, body. div{
 
   .navbar-header {
     float: none;
-    background-color: #fff
+    background-color: #fff;
   }
   .navbar-left,.navbar-right {
     float: none !important;
@@ -264,7 +264,6 @@ html, body. div{
 
   .navbar-collapse {
     border-top: 1px solid transparent;
-
   }
 
   .navbar-fixed-top {
@@ -278,7 +277,10 @@ html, body. div{
 
   .navbar-nav {
     float: none !important;
-    margin-top: 7.5px;
+    margin-top: -1px;
+    width: 100%;
+    opacity: 0.8;
+    text-align: center;
   }
 
   .navbar-nav>li {
