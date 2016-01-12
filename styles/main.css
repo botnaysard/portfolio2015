@@ -248,6 +248,7 @@ html, body. div{
   .navbar-header {
     float: none;
     background-color: #fff;
+    opacity: 0.8;
   }
   .navbar-left,.navbar-right {
     float: none !important;
