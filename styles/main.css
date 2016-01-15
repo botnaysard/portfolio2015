@@ -249,6 +249,9 @@ html, body. div{
     float: none;
     background-color: #fff;
     opacity: 0.8;
+    -khtml-opacity: 0.8;
+
+
   }
   .navbar-left,.navbar-right {
     float: none !important;
