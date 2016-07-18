@@ -21,6 +21,8 @@ html, body. div{
   z-index: 100;
   position: fixed;
   border-bottom: 1px solid #f2f2f2;
+  opacity: 0.8;
+  -khtml-opacity: 0.8;
 }
 
 .nav a {
