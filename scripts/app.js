@@ -52,24 +52,5 @@ $(document).ready(function(){
 		        scrollTop: $( $(this).attr('href') ).offset().top}, 600);
 		    return false;
 		});
-
-		// animate menu on scroll
-
-		var windowPosition = $(window);
-		var currentPosition = windowPosition.scrollTop();
-		var goingUp = false;
-		var scrollPosition;
-		windowPosition.scroll(function () {
-		    scrollPosition = windowPosition.scrollTop();
-		    if (scrollPosition > currentPosition && !goingUp) {
-		        $('.navbar').stop().fadeToggle();
-		        goingUp = !goingUp;
-		        console.log(goingUp);
-		    } else if(scrollPosition < currentPosition && goingUp) {
-		        $('.navbar').stop().fadeToggle();
-		        goingUp = !goingUp;
-		    }
-		    currentPosition = scrollPosition;
-		});
 	}
 });

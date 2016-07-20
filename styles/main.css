@@ -15,18 +15,18 @@ html, body. div{
 }
 
 .nav {
-  background-color: #fff;
   width: 100%;
   vertical-align: middle;
   z-index: 100;
-  position: fixed;
-  border-bottom: 1px solid #f2f2f2;
-  opacity: 0.8;
-  -khtml-opacity: 0.8;
+  position: relative;
+  /* border-bottom: 1px solid #f2f2f2; */
+  opacity: 0.7;
+  -khtml-opacity: 0.7;
+  padding: 0px;
 }
 
 .nav a {
-  color: #333;
+  color: white;
   text-decoration: none;
 }
 
@@ -44,13 +44,16 @@ html, body. div{
 }
 
 .jumbotron {
-  background-image:url('../images/ruler-bg.jpeg');
   height: 800px;
+  margin-bottom: 0px;
+  text-align: center;
+  vertical-align: middle;
+  background-image:url('../images/office-p.jpg');
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   padding: 0px;
-  margin-bottom: 0px;
 }
 
 .row-centered {
@@ -68,32 +71,23 @@ html, body. div{
   font-family: Raleway, helvetica, sans-serif; 
   text-align: center;
   vertical-align: middle;
-  text-transform: uppercase;
-  font-size: 2em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  border-radius: 200px;
-  -webkit-border-radius: 200px; 
-  -moz-border-radius: 200px;
-  width: 250px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 2.1em;
+  font-size: 3em;
+  margin: 1.5em auto;
+  width: 300px;
 }
 
 .section-title-black {
   color: black;
-  border: 1px solid black;
 }
 
 .section-title-white {
   color: white;
-  border: 1px solid white;
   margin-bottom: 60px;
 }
 
 .section-title-white h1, .section-title-black h1 {
   margin-top: 10px;
+  font-size: 1.3em;
 }
 
 .dark-section {
@@ -102,30 +96,31 @@ html, body. div{
   padding-bottom: 7em;
 }
 
+.container {
+  display: inline-block;
+  width: 650px;
+  height: 165px;
+  margin: 250px auto 0px auto;
+  padding: 0px;
+}
+
 .me-nutshell{
-  width: 400px;
-  height:400px;
+  width: 650px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid white;
-  border-radius: 200px;
-  -webkit-border-radius: 200px; 
-  -moz-border-radius: 200px;
-  margin-top: 200px;
   text-align: center;
-  padding-top: 150px;
   color: #fff;
 }
 
 .me-nutshell h2 {
   font-family: Bitter, times, serif;
-  font-size: 3em;
+  font-size: 5em;
   font-weight: 300;
 }
 
 .me-nutshell p {
   font-family: Roboto, helvetica, sans-serif;
-  font-size: 1.6em;
+  font-size: 2em;
 }
 
 .about-me {
@@ -194,7 +189,7 @@ html, body. div{
 
 .portfolio-box {
   display: inline-block;
-  width: 49%;
+  width: 33%;
   text-align: center;
   margin: -2px 0px 0px 0px;
   padding: 0px;
@@ -311,7 +306,6 @@ html, body. div{
 
   .navbar-header {
     float: none;
-    background-color: #fff;
     opacity: 0.8;
     -khtml-opacity: 0.8;
 
@@ -320,14 +314,14 @@ html, body. div{
   .navbar-left,.navbar-right {
     float: none !important;
   }
+
   .navbar-toggle {
     display: block;
-    background-color: #fff;
-    border: 1px solid #5a5a5a;
+    border: 1px solid white;
   }
 
   .navbar-toggle .icon-bar {
-    background-color: #5a5a5a;
+    background-color: white;
   }
 
   .navbar-collapse {
@@ -336,7 +330,7 @@ html, body. div{
 
   .navbar-fixed-top {
     top: 0;
-    border-width: 0 0 1px;
+    border-width: 0 0 0px;
   }
 
   .navbar-collapse.collapse {
@@ -345,9 +339,9 @@ html, body. div{
 
   .navbar-nav {
     float: none !important;
-    margin-top: -1px;
+    margin: 0px auto;
     width: 100%;
-    opacity: 0.8;
+    opacity: 0.7;
     text-align: center;
   }
 
