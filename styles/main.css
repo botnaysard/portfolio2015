@@ -92,6 +92,13 @@ html, body. div{
   background-color: #333;
   padding-top: 0.7em;
   padding-bottom: 7em;
+  text-align: center;
+  vertical-align: middle;
+  background-image:url('../images/coding-p.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }
 
 .container {
