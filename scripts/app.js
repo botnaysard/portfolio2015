@@ -26,7 +26,7 @@ $(document).ready(function(){
 	    }
 	};
 
-	//if the device is NOT mobile, allow animations
+	// if the device is NOT mobile, allow animations
     if(!isMobile.any()) { 
 
 		// fade the first two sections of the page in on load
@@ -53,4 +53,34 @@ $(document).ready(function(){
 		    return false;
 		});
 	}
+
+	// contact form
+
+	$('#slickform').on('submit', function(e) {
+        e.preventDefault();
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var comments = $('#comments').val();
+ 
+        $.ajax({
+            url:'https://formspree.io/hifive@scotthayward.io',
+            method:'POST',
+            data:{
+                name:name,
+                _replyto:email,
+                 email:email,
+                comments:comments,
+                _subject:'Form submission from scotthayward.io',
+            },
+            dataType:"json",
+            success:function() {
+                console.log('success'); 
+                $('#formBlock').hide();
+                $('#thankyouBlock').show();
+            }   
+
+        });     
+        
+    });
+
 });

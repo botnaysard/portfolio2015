@@ -36,7 +36,7 @@
 			<div class="container">
 				<div class="nutshell-background"></div>
 				<div class="me-nutshell">
-					<h2>Howdy, I'm Scott.</h2>
+					<h2>Hello, I'm Scott.</h2>
 					<p>Creative Front End Developer.</p>
 				</div>
 			</div>
@@ -52,12 +52,11 @@
 						<img src="images/portrait.jpg">
 					</div>
 					<div class="col-sm-10 col-md-4 col-centered my-description">
+						<p>Ottawa area.</p>
 						<p>Linux geek.</p>
 						<p>Tattoo collector.</p>
-						<p>Coffee addict.</p>
-						<p>Pug owner.</p>
-						<p>I <i class="fa fa-heart"></i> front end development.</p>
-						<p></p>
+						<p>Hopeless coffee addict.</p>
+						<p><i class="fa fa-heart"></i> Pugs.</p>
 						<p>HTML, SASS, CSS, JavaScript, jQuery.</p>
 					</div>
 				</div>
@@ -109,16 +108,26 @@
 					<h1>Contact.</h1>
 				</div>
 				<div class="row row-centered my-details">
-					<div class="col-sm-10 col-md-5 col-centered location-details">
-						<p>I call Ottawa, ON home.</p>  
-						<p>If you want to work with me, just shoot me an e-mail or give me a call.</p>
-						<p>I'm also open to random hi-fives on the street.</p>
-						<p><i class="fa fa-paper-plane"></i> hifive<i class="fa fa-at"></i>scotthayward.io</p>
-						<p><i class="fa fa-phone fa-lg"></i> 613.614.7901</p>
-						<p><a href="http://www.github.com/mrmooby" title="GitHub"><i class="fa fa-github fa-lg"></i> mrmooby</a></p>
-					</div>
-					<div class="col-sm-12 col-md-4 col-centered city-map">
-						<img src="images/map.png">
+					<div class="col-sm-12 col-md-6 col-centered location-details">
+					    <div id="formBlock">
+					        <form id="slickform">
+					            Hi there, my name is
+								<input type="text" id="name" required>
+					            and my e-mail address is
+					            <input type="email" id="email" required>.
+								I'd like to get in touch with you regarding
+					            <textarea id="comments" required style="overflow:hidden"></textarea>.
+					            <br>
+					            <div id="sendit">
+					        		<input type="submit" id="sendbutton" value="Hi-five!">
+					        	</div>
+					        </form>
+					    </div>
+					    <div id="thankyouBlock" style="display:none">
+					        <p>
+					            Transmission complete!  Thanks for reaching out.  I'll be in touch ASAP.
+					        </p>
+					    </div> 
 					</div>
 				</div>
 			</div>
