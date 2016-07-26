@@ -70,7 +70,7 @@ html, body. div{
   text-align: center;
   vertical-align: middle;
   font-size: 3em;
-  margin: 1.5em auto;
+  margin: 40px auto;
   width: 300px;
 }
 
@@ -84,7 +84,6 @@ html, body. div{
 }
 
 .section-title-white h1, .section-title-black h1 {
-  margin-top: 10px;
   font-size: 1.3em;
 }
 
@@ -142,6 +141,11 @@ html, body. div{
   margin-right: auto;
   margin-bottom: 1em;
   padding: 0px;
+}
+
+.location-details {
+	width: 850px;
+	min-width: 850px;
 }
 
 .my-description, .location-details{
@@ -310,9 +314,14 @@ html, body. div{
   margin-bottom: 40px;
 }
 
+.bump-right {
+	margin-right: -50px;
+}
+
 /*** CONTACT FORM ***/
 
 #slickform {
+  width: 850px;
   padding: 0px 20px 70px 20px;
   margin: 0px auto 50px auto;
   text-align: left;
@@ -352,7 +361,7 @@ input:focus, textarea:focus {
   height: auto;
   width: auto;
   padding: 0px;
-  width: 150px;
+  width: 175px;
   height: 50px;
   margin: 70px auto 0px auto;
 }
@@ -388,15 +397,15 @@ input:focus, textarea:focus {
 }
 
 #name {
-  width: 300px;
+  width: 250px;
 }
 
 #email {
-  width: 500px;
+  width: 450px;
 }
 
 #comments {
-  width: 750px;
+  width: 600px;
 }
 
 ::-webkit-input-placeholder {
@@ -482,6 +491,10 @@ input:focus, textarea:focus {
   .my-description, .location-details{
     margin-left: 0px;
   }
+
+  .bump-right {
+	margin-right: -20px;
+}
   
 }
 
