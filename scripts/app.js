@@ -75,8 +75,8 @@ $(document).ready(function(){
             dataType:"json",
             success:function() {
                 console.log('success'); 
-                $('#formBlock').hide();
-                $('#thankyouBlock').show();
+                $('#formBlock').fadeOut();
+                $('#thankyouBlock').fadeIn();
             }   
 
         });     
