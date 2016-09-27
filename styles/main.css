@@ -90,6 +90,7 @@ footer a:hover {
   font-size: 3em;
   margin: 40px auto;
   width: 300px;
+  letter-spacing: 3px;
 }
 
 .section-title-black {
@@ -126,7 +127,7 @@ footer a:hover {
   padding: 0px;
 }
 
-.me-nutshell{
+.me-nutshell {
   width: 650px;
   margin-left: auto;
   margin-right: auto;
@@ -138,11 +139,13 @@ footer a:hover {
   font-family: Bitter, times, serif;
   font-size: 5em;
   font-weight: 300;
+  font-kerning: none;
 }
 
 .me-nutshell p {
   font-family: Roboto, helvetica, sans-serif;
   font-size: 36px;
+  letter-spacing: 6px;
 }
 
 .about-me {
@@ -164,6 +167,11 @@ footer a:hover {
 .location-details {
 	width: 850px;
 	min-width: 850px;
+}
+
+
+.my-description {
+	letter-spacing: 1px;
 }
 
 .my-description, .location-details{
