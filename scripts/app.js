@@ -26,6 +26,24 @@ $(document).ready(function(){
 	    }
 	};
 
+	// Autohide menu on scroll
+		var windowPosition = $(window);
+		var currentPosition = windowPosition.scrollTop();
+		var goingUp = false;
+		var scrollPosition;
+		windowPosition.scroll(function () {
+		    scrollPosition = windowPosition.scrollTop();
+		    if (scrollPosition > currentPosition && !goingUp) {
+		        $('nav').stop().fadeToggle();
+		        goingUp = !goingUp;
+		        console.log(goingUp);
+		    } else if(scrollPosition < currentPosition && goingUp) {
+		        $('nav').stop().fadeToggle();
+		        goingUp = !goingUp;
+		    }
+		    currentPosition = scrollPosition;
+		});
+
 	// if the device is NOT mobile, allow animations
     if(!isMobile.any()) { 
 
