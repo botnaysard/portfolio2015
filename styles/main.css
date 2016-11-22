@@ -89,7 +89,7 @@ nav a {
 }
 
 section {
-  margin-bottom: 150px;
+  margin: 0px;
 }
 
 /*** MASTHEAD ***/
@@ -181,7 +181,7 @@ section {
   padding: 0px;
 }
 
-.location-details {
+.contact-valign {
 	width: 850px;
 	min-width: 850px;
 }
@@ -190,13 +190,13 @@ section {
 	letter-spacing: 1px;
 }
 
-.my-description, .location-details{
+.my-description, .contact-valign{
   font-size: 28px;
   font-weight: 300;
   margin-left: 1.5em;
 }
 
-.location-details {
+.contact-valign {
   vertical-align: middle;
 }
 
@@ -207,6 +207,7 @@ section {
 }
 
 .my-work {
+  min-height: 100vh;
   margin-bottom: 2em;
   width: 100%;
 }
@@ -257,9 +258,7 @@ section {
   width: 100%;
 }
 
-.bump-right {
-	margin-right: -45px;
-}
+
 
 /*** CONTACT FORM ***/
 
@@ -271,6 +270,7 @@ section {
   color: white; 
   font-weight: 300;
   font-size: 28px;
+  text-align: left;
 }
 
 #slickform input, #slickform textarea {
@@ -314,7 +314,7 @@ input:focus, textarea:focus {
 #sendbutton {
   -webkit-appearance: none;
   background-color: #222;
-  border: 1px solid transparent;
+  border: 1px solid #2f2f2f;
   color: white;
   width: 175px;
   height: 65px;
@@ -329,9 +329,10 @@ input:focus, textarea:focus {
 }
 
 #sendbutton:hover {
-  background-color: white;
-  color: #222;
+  background-color: #222;
+  color: white;
   cursor: pointer;
+  border: 1px solid white;
 }
 
 #name, #email, #comments {
@@ -350,7 +351,7 @@ input:focus, textarea:focus {
 }
 
 #comments {
-  width: 600px;
+  width: 700px;
 }
 
 ::-webkit-input-placeholder {
