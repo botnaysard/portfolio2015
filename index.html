@@ -3,128 +3,80 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
 		<link href='https://fonts.googleapis.com/css?family=Raleway:700|Roboto:300,400|Bitter:700' rel='stylesheet' type='text/css'>
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="styles/main.css">
 		<link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css">
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="scripts/app.js"></script>
 		<meta charset="UTF-8">
 		<meta content='user-scalable=no, initial-scale=1, width=device-width' id='viewport' name='viewport'>
 		<title>Scott Hayward, Creative Front End Developer</title>
 	</head>
 	<body>	
-		<div class="jumbotron on-page-load">
-			<a id="links"></a> 
-			<nav class="navbar">
-				<div class="navbar-header">
-				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				      <span class="icon-bar"></span>
-				      <span class="icon-bar"></span>
-				      <span class="icon-bar"></span>
-				    </button>
-			  	</div>
-			  	<div class="navbar-collapse collapse">
-			    	<ul class="nav navbar-nav">
-						<li><a href="#links">home</a></li>
-						<li><a href="#about">about</a></li>
-						<li><a href="#portfolio">projects</a></li>
-						<li><a href="#contact">contact</a></li>
-			    	</ul>
-			  	</div>
-			</nav>
-			<div class="container">
-				<div class="me-nutshell">
-					<h2>Hello, I'm Scott.</h2>
-					<p>Creative Front End Developer.</p>
+		<a id="links"></a> 
+		<nav>
+	    	<ul>
+				<li><a href="#links">home</a></li>
+				<li><a href="#portfolio">projects</a></li>
+				<li><a href="#contact">contact</a></li>
+	    	</ul>		 	
+		</nav>
+		<section id="masthead">
+				<div id="mast-text">
+					<div id="me-nutshell">
+						<h1>Hi, my name is Scott.</h1>
+						<h3>I'm a Front End Developer with a mild UI/UX obsession.</h3>
+						<h5>I presently work with HTML, SASS, CSS, JavaScript &amp; jQuery.</h5>  						
+					</div>					
 				</div>
-			</div>
-		</div>
-		<section>
-			<a id="about"></a>
-			<div class="about-me on-page-load">
-				<div class="section-title-black">
-					<h1>About.</h1>
-				</div>
-				<div class="row row-centered">
-					<div class="col-sm-12 col-md-4 col-centered my-photo">
-						<img src="images/portrait.jpg">
-					</div>
-					<div class="col-sm-10 col-md-4 col-centered my-description">
-						<p>Ottawa area.</p>
-						<p>Linux geek.</p>
-						<p>Tattoo collector.</p>
-						<p>Hopeless coffee addict.</p>
-						<p>I <i class="fa fa-heart"></i> Pugs.</p>
-						<p>HTML, SASS, CSS, JavaScript, jQuery.</p>
-					</div>
-				</div>
-			</div>
 		</section>
 		<section>
-			<a id="portfolio"></a>
-			<div class="dark-section faded">
-				<div class="section-title-white">
-					<h1>Projects.</h1>
+			<a id="portfolio"></a>				
+				<div class="my-work">
+					<div id="project-gallery">
+						<a href="http://www.averyfairydoor.com" title="A Very Fairy Door"><img src="images/avfd.jpg"/></a>
+						<a href="https://botnaysard.github.io/api-hack/" title="Google Maps Travel Distance Calculator"><img src="images/maps.jpg"/></a>
+						<a href="https://botnaysard.github.io/fewd-quiz/" title="Muscle Anatomy Quiz"><img src="images/muscle.jpg"/></a>			
+						<a href="https://botnaysard.github.io/fewd-shopping-list/" title="Shopping List"><img src="images/shopping.jpg"/></a>										
+					</div>
 				</div>
-				<div class="my-work">								
-					<div class="row row-centered">
-						<div class="col-sm-10 col-centered project-link">
-							<a href="http://www.averyfairydoor.com" title="A Very Fairy Door"><img src="images/avfd.jpg"/></a>   					
-     					</div>  
-					</div>
-					<div class="row row-centered">
-						<div class="col-sm-10 col-centered project-link">
-							<a href="https://botnaysard.github.io/fewd-quiz/" title="Muscle Anatomy Quiz"><img src="images/muscle.jpg"/></a>
-						</div>
-					</div>
-					<div class="row row-centered">
-						<div class="col-sm-10 col-centered project-link">
-							<a href="https://botnaysard.github.io/fewd-shopping-list/" title="Shopping List"><img src="images/shopping.jpg"/></a>
-						</div>
-					</div>
-					<div class="row row-centered">
-						<div class="col-sm-10 col-centered project-link">
-							<a href="https://botnaysard.github.io/api-hack/" title="Google Maps Travel Distance Calculator"><img src="images/maps.jpg"/></a>
-     					</div>
-					</div>			
-				</div>
-			</div>
 		</section>
 		<section>
-			<div class="contact-info faded">
-				<a id="contact"></a>
-				<div class="section-title-black">
-					<h1 class="bump-right">Contact.</h1>
-				</div>
-				<div class="row row-centered my-details">
-					<div class="col-centered location-details">
-					    <div id="formBlock">
-					        <form id="slickform">
-					            Hi there, my name is
-								<input type="text" id="name" required>
-					            and my e-mail address is
-					            <input type="email" id="email" required>.
-								I'd like to get in touch with you regarding
-					            <textarea id="comments" required style="overflow:hidden"></textarea>.
-					            <br>
-					            <div id="sendit">
-					        		<input type="submit" id="sendbutton" value="Hi-five!">
-					        	</div>
-					        </form>
-					    </div>
-					    <div id="thankyouBlock" style="display:none">
-					        <p>
-					            Transmission complete!  Thanks for reaching out.  I'll be in touch ASAP.
-					        </p>
-					    </div> 
+			<a id="contact"></a>
+			<div class="contact-info">
+
+				<div class="contactainer">				
+					<div class="section-title">
+						<h1 class="bump-right">Send me a note.</h1>
+					</div>
+					<div class="row-centered my-details">
+						<div class="col-centered contact-valign">
+						    <div id="formBlock">
+						        <form id="slickform">
+						            Hi there, my name is
+									<input type="text" id="name" required>
+						            and my e-mail address is
+						            <input type="email" id="email" required>.
+									I'd like to get in touch with you about
+						            <textarea id="comments" required style="overflow:hidden"></textarea>.
+						            <br>
+						            <div id="sendit">
+						        		<input type="submit" id="sendbutton" value="Hi-five!">
+						        	</div>
+						        </form>
+						    </div>
+						    <div id="thankyouBlock" style="display:none">
+						        <p>
+						            Transmission complete!  Thanks for reaching out.  I'll be in touch ASAP.
+						        </p>
+						    </div> 
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<footer>
 			<div>
-				Background images courtesy of <a href="http://www.unsplash.com">unsplash</a>.  All other content by Scott Hayward, 2015-2016.
+				Snazzy masthead image courtesy of <a href="http://www.unsplash.com">unsplash</a>.  Everything else by yours truly, 2016.
 			</div>	
 		</footer>
 	</body>

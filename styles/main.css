@@ -96,7 +96,7 @@ section {
 
 #masthead {
   min-height: 100%;
-  background: url("../images/office-p.jpg") ; 
+  background: url("../images/office-p.jpg") no-repeat center center scroll; 
 }
 
 #mast-text {
@@ -382,6 +382,7 @@ input:focus, textarea:focus {
 #thankyouBlock {
 	text-align: center;
 	vertical-align: middle;
+  color: white;
 }
 
 
