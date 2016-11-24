@@ -227,12 +227,12 @@ section {
   height: auto !important;
 }
 
-.project-link img {
+.project-a {
   display: block;
-  max-width: 100%;
-  max-height: 40vh;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.project-b, .project-c {
+  display: none;
 }
 
 .my-details {
@@ -385,4 +385,26 @@ input:focus, textarea:focus {
   color: white;
 }
 
+/*** RESPONSIVE ELEMENTS ***/
 
+@media screen and (max-width: 1750px) {
+  .project-a {
+    display: none;
+  }
+
+  .project-b {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1390px) {
+  .project-b {
+    display: none;
+  }
+
+  .project-c {
+    display: block;
+  }
+}
+
+/** next break is at 990px **/
