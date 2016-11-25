@@ -231,7 +231,7 @@ section {
   display: block;
 }
 
-.project-b, .project-c {
+.project-b, .project-c, .project-d {
   display: none;
 }
 
@@ -403,6 +403,16 @@ input:focus, textarea:focus {
   }
 
   .project-c {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .project-c {
+    display: none;
+  }
+
+  .project-d {
     display: block;
   }
 }
