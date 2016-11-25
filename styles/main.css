@@ -96,7 +96,8 @@ section {
 
 #masthead {
   min-height: 100%;
-  background: url("../images/office-p.jpg") no-repeat center center scroll; 
+  background: url("../images/office-p.jpg") no-repeat center center; 
+  background-size: cover;
 }
 
 #mast-text {
@@ -122,16 +123,24 @@ section {
 #mast-text h3 {
   font-size: 2em;
   letter-spacing: 0.2em;
-  font-weight: 300;
+  font-weight: 400;
+}
+
+#h3-alt {
+  display: none;
+}
+
+#h1-alt {
+  display: none;
 }
 
 #mast-text h5 {
   font-size: 1.3em;
-  letter-spacing: 0.7em;
+  letter-spacing: 0.6em;
   font-weight: 300;
 }
 
-#mast-text p {}
+
 
 #me-nutshell {
   display: table-cell;
@@ -149,7 +158,7 @@ section {
   font-size: 2em;
   width: 90%;
   letter-spacing: 3px;
-  margin: 60px auto 60px auto;
+  margin: 60px auto;
   color: white;
 }
 
@@ -387,6 +396,8 @@ input:focus, textarea:focus {
 
 /*** RESPONSIVE ELEMENTS ***/
 
+/*** Swap Images to roughly fill various screen widths ***/
+
 @media screen and (max-width: 1750px) {
   .project-a {
     display: none;
@@ -397,6 +408,13 @@ input:focus, textarea:focus {
   }
 }
 
+@media screen and (max-width: 1425px) {
+  #mast-text h5 {
+  letter-spacing: 0.3em;
+  }
+
+}
+
 @media screen and (max-width: 1390px) {
   .project-b {
     display: none;
@@ -404,6 +422,21 @@ input:focus, textarea:focus {
 
   .project-c {
     display: block;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  #mast-text h3 {
+    width: 75%;
+  }
+
+  #mast-text h5 {
+    width: 70%;
+  }
+
+  #mast-text h3, #mast-text h5 {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -417,4 +450,98 @@ input:focus, textarea:focus {
   }
 }
 
-/** next break is at 990px **/
+/*** MOBILE ***/
+
+/*** Always use portrait shaped images for all portrait aligned devices ***/
+
+@media only screen
+  and (orientation: portrait) {
+    
+  .project-a, .project-b, .project-c {
+    display: none !important;
+  } 
+
+  .project-d {
+    display: block !important;
+  }
+}
+
+
+/*** Recent hiDPI displays iPhone 6+, Samsung S series at around 1080p***/
+
+/*** Portrait ***/
+
+@media only screen
+  and (min-device-width: 320px) 
+  and (max-device-width: 640px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+ 
+  nav {
+    height: 300px;
+    font-size: 70px;
+    line-height: 100px;
+    text-align: center;
+  }
+
+  nav ul li {
+   display: block; 
+  }
+
+  #mast-text h1 {
+    font-size: 8em;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #mast-text h3 {
+    font-size: 2.7em;
+    font-weight: 700;
+  }
+
+  #mast-text h5 {
+    font-size: 2.2em;
+    font-weight: 400;
+    line-height: 1.5em;
+  }
+
+  #h3-primary {
+    display: none;
+  }
+
+  #h3-alt {
+    display: block;
+  }
+
+}
+
+/*** Older iPhones & similar ***/
+
+@media only screen
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+  nav {
+    height: 220px;
+    font-size: 50px;
+    line-height: 70px;
+  }
+
+  #mast-text h1 {
+    font-size: 6em;
+    line-height: 1em;
+  }
+
+  #h1-primary {
+    display: none;
+  }
+
+  #h1-alt {
+    display: block;
+  }
+
+
+}
