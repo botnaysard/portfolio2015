@@ -67,27 +67,36 @@
 		<section>
 			<a id="contact"></a>
 			<div class="contact-info">
-
 				<div class="contactainer">				
 					<div class="section-title">
-						<h1 class="bump-right">Send me a note.</h1>
+						<h1>Send me a note.</h1>
 					</div>
-					<div class="row-centered my-details">
-						<div class="col-centered contact-valign">
-						    <div id="formBlock">
-						        <form id="slickform">
-						            Hi there, my name is
-									<input type="text" id="name" required>
-						            and my e-mail address is
-						            <input type="email" id="email" required>.
-									I'd like to get in touch with you about
-						            <textarea id="comments" required style="overflow:hidden"></textarea>.
-						            <br>
-						            <div id="sendit">
-						        		<input type="submit" id="sendbutton" value="Hi-five!">
-						        	</div>
-						        </form>
-						    </div>
+					<div class="my-details">
+						<div class="contact-valign">						   
+					        <form id="slickform" class="default-form">
+					            Hi there, my name is:
+								<input type="text" id="name" required>
+					            and my e-mail address is:
+					            <input type="email" id="email" required>.
+								I'd like to get in touch with you about
+					            <textarea id="comments" required style="overflow:hidden"></textarea>.
+					            <br>
+					            <div id="sendit">
+					        		<input type="submit" id="sendbutton" value="Hi-five!">
+					        	</div>
+					        </form>
+					        <form id="slickform" class="skinny-form">
+					            Hi there, my name is:<br>
+								<input type="text" id="name" required>.<br><br>
+					            and my e-mail address is:<br>
+					            <input type="email" id="email" required>.<br><br>
+								I'd like to get in touch with you about<br>
+					            <textarea id="comments" required style="overflow:hidden"></textarea>.
+					            <br>
+					            <div id="sendit">
+					        		<input type="submit" id="sendbutton" value="Hi-five!">
+					        	</div>
+					        </form>					    
 						    <div id="thankyouBlock" style="display:none">
 						        <p>
 						            Transmission complete!  Thanks for reaching out.  I'll be in touch ASAP.
