@@ -28,7 +28,7 @@ $(document).ready(function(){
         var comments = $('#comments').val();
  
         $.ajax({
-            url:'https://formspree.io/hifive@scotthayward.io',
+            url:'https://formspree.io/xdggjdym',
             method:'POST',
             data:{
                 name:name,
