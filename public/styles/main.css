@@ -48,13 +48,14 @@ nav {
   top: 0;
   width: 100%;
   z-index: 1000;
-  border-bottom: 1px solid #ece4e2;
   background-color: #2f2f2f;
+  border-bottom: 1px solid #ece4e2 !important;
 }
 
 nav ul {
   list-style-type: none;
   margin: 0px; 
+  background-color: #2f2f2f;;
 }
 
 nav ul li {
@@ -362,6 +363,8 @@ input:focus, textarea:focus {
   margin-top: -25px;
   right: 50%;
   margin-right: -400px;
+  font-size: 1em;
+  font-weight: 300;
 }
 
 /*** RESPONSIVE ELEMENTS ***/
@@ -408,7 +411,6 @@ input:focus, textarea:focus {
 
 @media only screen
   and (orientation: portrait) {
-    
   .project-a, .project-b, .project-c {
     display: none !important;
   } 
@@ -465,7 +467,6 @@ input:focus, textarea:focus {
   and (orientation: portrait) {
  
   nav {
-    height: 300px;
     font-size: 70px;
     line-height: 100px;
     text-align: center;
@@ -476,19 +477,20 @@ input:focus, textarea:focus {
   }
 
   #mast-text h1 {
-    font-size: 8em;
+    font-size: 6em;
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 
   #mast-text h3 {
-    font-size: 2.7em;
+    font-size: 2em;
     font-weight: 700;
   }
 
   #mast-text h5 {
-    font-size: 2.2em;
+    font-size: 1.2em;
     font-weight: 400;
     line-height: 1.5em;
   }
