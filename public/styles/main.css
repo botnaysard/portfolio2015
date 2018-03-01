@@ -8,6 +8,7 @@ body{
   color: #222;
   background-color: #2f2f2f;
   font-family: Roboto, helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 html, body {
@@ -97,7 +98,7 @@ section {
 
 #masthead {
   min-height: 100%;
-  background: url("../images/pineapple.jpg") no-repeat center center; 
+  background: url("../images/pineapple.jpg") no-repeat center bottom; 
   background-size: cover;
 }
 
@@ -114,6 +115,7 @@ section {
   font-family: Bitter, Times, serif;
   font-weight: 400; 
   font-kerning: none;
+  margin: -25px 0px 0px 0px;
 }
 
 #mast-text h3 h5 p {
@@ -478,7 +480,7 @@ input:focus, textarea:focus {
 
   #mast-text h1 {
     font-size: 6em;
-    width: 75%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
