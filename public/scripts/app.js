@@ -10,11 +10,25 @@ $(document).ready(function(){
 
 
 	// start animate scroll to section when link is clicked
-
+	/*
 	$('a').click(function(){
 	    $('html, body').animate({
 	        scrollTop: $( $(this).attr('href') ).offset().top}, 600);
 	    return false;
+	});
+	*/
+	$('.toplink').on('click', function() {
+		console.log('click.');
+		if ($(this).attr('id') == "go-home") {
+			$('#sec-projects, #sec-contact').hide(500);
+			$('#masthead').fadeIn(500);
+		} else if ($(this).attr('id') == "go-portfolio") {
+			$('#masthead, #sec-contact').hide(500);
+			$('#sec-projects').fadeIn(500);
+		} else if ($(this).attr('id') == "go-contact") {
+			$('#masthead, #sec-projects').hide(500);
+			$('#sec-contact').fadeIn(500);
+		}
 	});
 
 	// end animate on scroll to section when link is clicked

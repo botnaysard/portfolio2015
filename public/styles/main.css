@@ -68,30 +68,23 @@ nav ul li {
   font-weight: 400;
 }
 
-nav ul li a {
+.toplink {
   color: #ece4e2;
   text-decoration: none;
   transition: all 0.25s ease-in-out 0.25s; 
 }
 
-nav ul li a:visited {
-  color: #ece4e2; 
-}
-
-nav ul li a:hover {
-  color: #f1a91f; 
-}
-
-nav ul li a:active {
-  color: #f1a91f; 
-}
-
-nav a {
-  height: 40px; 
+.toplink:hover {
+  color: #f1a91f;
+  cursor: pointer;
 }
 
 section {
   margin: 0px;
+}
+
+#sec-contact, #sec-projects {
+  display: none;
 }
 
 /*** MASTHEAD ***/
